@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+0.005     2012-04-24 15:13:36 Europe/London
+
+        Install the package names tests in xt/release.
+
 0.004     2012-04-24 14:31:42 Europe/London
 
         Bugfix Dist::Zilla::Plugin::PackageNameTests - the -f test in
