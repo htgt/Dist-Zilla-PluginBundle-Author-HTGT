@@ -40,14 +40,14 @@ sub configure {
         'PackageNamesTests',
         'PkgVersion',
         'NextRelease',
-        'FakeRelease'
+        'FakeRelease',
         [
             'PruneFiles' => {
                 'filenames' => 'dist.ini',
                 length $self->skip_files ? ( 'match' => [ $self->skip_files ] ) : ()
             }
         ],
-        'Git::NextVersion',        
+        'Git::NextVersion',
         [
             'Git::CommitBuild' => {
                 branch          => '',                
@@ -60,14 +60,12 @@ sub configure {
         'Git::commit',
         [
             'Git::Tag' => {
-                branch = 'releases'
+                branch => 'releases'
             }
         ],
         'Git::Push',
     );
-    $self->add_bundle('@Git' => {
-        'commit_msg' => 'Bumped changelog following rel. v%v'
-    });
+
 }
 
 # stolen from Dist::Zilla::Plugin::Git::Commit
