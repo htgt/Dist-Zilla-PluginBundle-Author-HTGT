@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+0.003     2012-04-24 14:04:20 Europe/London
+
+        Fixed typo in UploadToCPAN excluded from @Basic bundle.
+
 0.002     2012-04-24 13:03:38 Europe/London
 
         Fixed typo in PackageNameTests plugin name.
