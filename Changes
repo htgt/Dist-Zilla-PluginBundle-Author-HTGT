@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+        Bugfix Dist::Zilla::Plugin::PackageNameTests - the -f test in
+        File::Find::find() was looking for the full path, failing to
+        take account of the chdir done by File::Find.
+
 0.003     2012-04-24 14:04:20 Europe/London
 
         Fixed typo in UploadToCPAN excluded from @Basic bundle.
