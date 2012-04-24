@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::PackageNameTests;
 {
-  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.003';
+  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.004';
 }
 
 use strict;
@@ -128,10 +128,9 @@ sub found_package_name($) {
 my @files;
 find(
   sub {
-    my $found = $File::Find::name;
-    return unless $found =~ /\.pm\z/ and -f $found;
+    return unless $_ =~ /\.pm\z/ and -f $_;
     PACKAGENAMETESTS_SKIP
-    push @files, [ $found, found_package_name $found, expected_package_name $found ];
+    push @files, [ $File::Find::name, found_package_name $_, expected_package_name $File::Find::name ];
   },
   'lib',
 );
