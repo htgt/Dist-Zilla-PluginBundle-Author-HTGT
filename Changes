@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+0.002     2012-04-24 13:03:38 Europe/London
+
+        Fixed typo in PackageNameTests plugin name.
+
 0.001     2012-04-24 12:59:33 Europe/London
 
         Initial release.
