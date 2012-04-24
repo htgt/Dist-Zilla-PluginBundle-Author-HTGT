@@ -37,7 +37,7 @@ sub configure {
         ],
         'Test::Compile',
         'NoSmartCommentsTests',
-        'PackageNamesTests',
+        'PackageNameTests',
         'PkgVersion',
         'NextRelease',
         'FakeRelease',
