@@ -22,7 +22,7 @@ has skip => ( is=>'ro', predicate=>'has_skip' );
 sub munge_file {
     my ($self, $file) = @_;
 
-    return unless $file->name eq 'xt/package-names.t';
+    return unless $file->name eq 'xt/release/package-names.t';
 
     my $replacement = ( $self->has_skip && $self->skip )
         ? sprintf( 'return if $found =~ /%s/;', $self->skip )
@@ -65,7 +65,7 @@ the following files:
 
 =over 4
 
-=item * xt/package-names.t - a standard test to check the package declaration
+=item * xt/release/package-names.t - a standard test to check the package declaration
 
 This test will find all modules in your dist, and check that the package name
 is consistent with the file name, e.g. a module found in C<lib/My/Module.pm> should
@@ -93,7 +93,7 @@ the same terms as the Perl 5 programming language system itself.
 
 
 __DATA__
-___[ xt/package-names.t ]___
+___[ xt/release/package-names.t ]___
 #!perl
 
 use strict;
