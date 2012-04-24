@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
 {
-  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.001';
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.002';
 }
 
 use Moose;
@@ -40,7 +40,7 @@ sub configure {
         ],
         'Test::Compile',
         'NoSmartCommentsTests',
-        'PackageNamesTests',
+        'PackageNameTests',
         'PkgVersion',
         'NextRelease',
         'FakeRelease',
