@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::PackageNameTests;
 {
-  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.002';
+  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.003';
 }
 
 use strict;

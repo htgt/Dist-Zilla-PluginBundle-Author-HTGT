@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
 {
-  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.002';
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.003';
 }
 
 use Moose;
@@ -28,7 +28,7 @@ sub configure {
     $self->add_bundle(
         '@Filter' => {
             '-bundle' => '@Basic',
-            '-remove' => [ 'UpleadToCPAN' ],
+            '-remove' => [ 'UploadToCPAN' ],
         }
     );
 
