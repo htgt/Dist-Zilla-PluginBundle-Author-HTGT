@@ -57,7 +57,7 @@ sub configure {
         ],
         # CommitBuild -must- come before these
         'Git::Check',
-        'Git::commit',
+        'Git::Commit',
         [
             'Git::Tag' => {
                 branch => 'releases'
