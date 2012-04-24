@@ -1,0 +1,29 @@
+---
+abstract: 'Dist::Zilla plugin bundle for the HTGT team'
+author:
+  - 'Ray Miller'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0.88
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300014, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-PluginBundle-Author-HTGT
+requires:
+  Dist::Zilla: 0
+  Dist::Zilla::Plugin::Git: 0
+  Dist::Zilla::Plugin::InlineFiles: 0
+  Dist::Zilla::Plugin::NoSmartCommentsTests: 0
+  Dist::Zilla::Role::FileMunger: 0
+  Dist::Zilla::Role::PluginBundle::Easy: 0
+  Moose: 0
+  Test::NoSmartComments: 0
+  strict: 0
+  warnings: 0
+version: 0.001

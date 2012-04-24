@@ -1,4 +1,7 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
+{
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.001';
+}
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';

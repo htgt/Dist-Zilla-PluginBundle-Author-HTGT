@@ -1,0 +1,10 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+lib/Dist/Zilla/Plugin/PackageNameTests.pm
+lib/Dist/Zilla/PluginBundle/Author/HTGT.pm
+t/00-compile.t
+t/release-no-smart-comments.t
