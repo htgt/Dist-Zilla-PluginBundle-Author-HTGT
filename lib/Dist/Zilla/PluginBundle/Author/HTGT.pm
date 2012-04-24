@@ -25,7 +25,7 @@ sub configure {
     $self->add_bundle(
         '@Filter' => {
             '-bundle' => '@Basic',
-            '-remove' => [ 'UpleadToCPAN' ],
+            '-remove' => [ 'UploadToCPAN' ],
         }
     );
 
