@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::PackageNameTests;
 {
-  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.005';
+  $Dist::Zilla::Plugin::PackageNameTests::VERSION = '0.006';
 }
 
 use strict;
@@ -25,7 +25,7 @@ has skip => ( is=>'ro', predicate=>'has_skip' );
 sub munge_file {
     my ($self, $file) = @_;
 
-    return unless $file->name eq 'xt/release/package-names.t';
+    return unless $file->name eq 't/release-package-names.t';
 
     my $replacement = ( $self->has_skip && $self->skip )
         ? sprintf( 'return if $found =~ /%s/;', $self->skip )
