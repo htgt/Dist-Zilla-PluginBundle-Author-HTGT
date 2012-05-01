@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
 {
-  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.006';
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.007';
 }
 
 use Moose;
@@ -38,10 +38,15 @@ sub configure {
                 length $self->skip_deps ? ( 'skip' => [ $self->skip_deps ] ) : ()
             }
         ],
+        'PkgVersion',        
         'Test::Compile',
+        'Test::EOL',
         'NoSmartCommentsTests',
-        'PackageNameTests',
-        'PkgVersion',
+        [
+            'Test::Perl::Critic' => {
+                critic_config => $ENV{PERLCRITICRC} || '/opt/t87/global/conf/perlcritic.rc'
+            }
+        ],
         'NextRelease',
         'FakeRelease',
         [
@@ -106,13 +111,16 @@ This is the plugin bundle that HTGT uses. It is equivalent to:
 
  [AutoPrereqs]
 
+ [PkgVersion]
+
  [Test::Compile]
+
+ [Test::EOL]
 
  [NoSmartCommentsTests]
 
- [PackageNamesTests]
-
- [PkgVersion]
+ [Test::Perl::Critic]
+ critic_config = $PERLCRITICRC || /opt/t87/global/conf/perlcritic.rc
 
  [NextRelease]
 

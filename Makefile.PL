@@ -28,14 +28,18 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Git" => 0,
     "Dist::Zilla::Plugin::InlineFiles" => 0,
     "Dist::Zilla::Plugin::NoSmartCommentsTests" => 0,
+    "Dist::Zilla::Plugin::Test::EOL" => 0,
+    "Dist::Zilla::Plugin::Test::Perl::Critic" => 0,
     "Dist::Zilla::Role::FileMunger" => 0,
     "Dist::Zilla::Role::PluginBundle::Easy" => 0,
     "Moose" => 0,
+    "Test::EOL" => 0,
     "Test::NoSmartComments" => 0,
+    "Test::Perl::Critic" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.006",
+  "VERSION" => "0.007",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -1,3 +1,9 @@
+0.007     2012-05-01 12:47:44 Europe/London
+
+        Add Perl::Critic and EOL tests. Perl::Critic is configured to
+        test package names, so drop PackageNameTests from our author
+        bundle.
+
 0.006     2012-04-25 09:36:11 Europe/London
 	Bugfix Dist::Zilla::Plugin::PackageNameTests::munge_file(). 
 	The release tests are renamed from xt/ to t/ before munge_file() is called,
