@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+0.010     2012-05-01 16:04:04 Europe/London
+
+        Remove Dist::Zilla::Plugin::PerlTidy dependency.
+
 0.009     2012-05-01 16:01:57 Europe/London
 
         Disable Perl::Critic RequireUseStrict and RequireUseWarnings
