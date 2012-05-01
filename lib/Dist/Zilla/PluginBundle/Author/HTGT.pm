@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
 {
-  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.009';
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.010';
 }
 
 use Moose;

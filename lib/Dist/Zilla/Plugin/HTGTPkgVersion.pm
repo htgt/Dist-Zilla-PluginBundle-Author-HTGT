@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::HTGTPkgVersion;
 {
-  $Dist::Zilla::Plugin::HTGTPkgVersion::VERSION = '0.009';
+  $Dist::Zilla::Plugin::HTGTPkgVersion::VERSION = '0.010';
 }
 # ABSTRACT: add a $VERSION to your packages
 use Moose;
