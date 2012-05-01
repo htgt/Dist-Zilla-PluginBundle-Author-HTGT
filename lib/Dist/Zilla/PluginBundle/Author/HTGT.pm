@@ -1,6 +1,6 @@
 package Dist::Zilla::PluginBundle::Author::HTGT;
 {
-  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.008';
+  $Dist::Zilla::PluginBundle::Author::HTGT::VERSION = '0.009';
 }
 
 use Moose;
@@ -40,7 +40,6 @@ sub configure {
         ],
         'HTGTPkgVersion',        
         'Test::Compile',
-        'Test::EOL',
         'NoSmartCommentsTests',
         [
             'Test::Perl::Critic' => {
@@ -114,8 +113,6 @@ This is the plugin bundle that HTGT uses. It is equivalent to:
  [HTGTPkgVersion]
 
  [Test::Compile]
-
- [Test::EOL]
 
  [NoSmartCommentsTests]
 

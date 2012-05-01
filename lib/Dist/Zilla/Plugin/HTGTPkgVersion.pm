@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::HTGTPkgVersion;
 {
-  $Dist::Zilla::Plugin::HTGTPkgVersion::VERSION = '0.008';
+  $Dist::Zilla::Plugin::HTGTPkgVersion::VERSION = '0.009';
 }
 # ABSTRACT: add a $VERSION to your packages
 use Moose;
@@ -84,7 +84,10 @@ sub munge_perl {
     ]);
 
     Carp::carp("error inserting version in " . $file->name)
-      unless $stmt->insert_after($children[0]->clone)
+      unless $stmt->insert_after( PPI::Token::Comment->new("## use critic\n") )
+      and    $stmt->insert_after( PPI::Token::Whitespace->new("\n") )                
+      and    $stmt->insert_after($children[0]->clone)
+      and    $stmt->insert_after( PPI::Token::Comment->new( "## no critic(RequireUseStrict,RequireUseWarnings)\n" ) )
       and    $stmt->insert_after( PPI::Token::Whitespace->new("\n") );
   }
 
@@ -111,14 +114,17 @@ in dist.ini
 
 This plugin is identical to L<Dist::Zilla::Plugin::PkgVersion> except
 that it adds more indentation to the added code, for consistency with
-the HTGT PerlTidy 4-character indent.
+the HTGT PerlTidy 4-character indent, and emits Perl::Critic tags
+around the inserted code.
 
 This plugin will add lines like the following to each package in each Perl
 module or program (more or less) within the distribution:
 
+  ## no critic
   {
       $MyModule::VERSION = 0.001;
   }
+  ## use critic
 
 ...where 0.001 is the version of the dist, and MyModule is the name of the
 package being given a version.  (In other words, it always uses fully-qualified

@@ -28,6 +28,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Git" => 0,
     "Dist::Zilla::Plugin::InlineFiles" => 0,
     "Dist::Zilla::Plugin::NoSmartCommentsTests" => 0,
+    "Dist::Zilla::Plugin::PerlTidy" => 0,
     "Dist::Zilla::Plugin::Test::EOL" => 0,
     "Dist::Zilla::Plugin::Test::Perl::Critic" => 0,
     "Dist::Zilla::Role::FileFinderUser" => 0,
@@ -37,14 +38,13 @@ my %WriteMakefileArgs = (
     "Moose" => 0,
     "MooseX::Types::Perl" => 0,
     "PPI" => 0,
-    "Test::EOL" => 0,
     "Test::NoSmartComments" => 0,
     "Test::Perl::Critic" => 0,
     "namespace::autoclean" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.008",
+  "VERSION" => "0.009",
   "test" => {
     "TESTS" => "t/*.t"
   }
