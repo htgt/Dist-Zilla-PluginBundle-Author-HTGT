@@ -1,3 +1,10 @@
+0.008     2012-05-01 13:40:42 Europe/London
+
+        Add Dist::Zilla::Plugin::HTGTPkgVersion. This is identical to
+        the standard Dist::Zilla::Plugin::PkgVersion only it indents
+        the added code 4 characters for consistency with the HTGT
+        PerlTidy conifguration.
+
 0.007     2012-05-01 12:47:44 Europe/London
 
         Add Perl::Critic and EOL tests. Perl::Critic is configured to

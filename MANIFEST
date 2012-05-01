@@ -4,6 +4,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+lib/Dist/Zilla/Plugin/HTGTPkgVersion.pm
 lib/Dist/Zilla/Plugin/PackageNameTests.pm
 lib/Dist/Zilla/PluginBundle/Author/HTGT.pm
 t/00-compile.t
