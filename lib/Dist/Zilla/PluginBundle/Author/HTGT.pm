@@ -37,7 +37,6 @@ sub configure {
         ],
         'HTGTPkgVersion',        
         'Test::Compile',
-        'Test::EOL',
         'NoSmartCommentsTests',
         [
             'Test::Perl::Critic' => {
@@ -111,8 +110,6 @@ This is the plugin bundle that HTGT uses. It is equivalent to:
  [HTGTPkgVersion]
 
  [Test::Compile]
-
- [Test::EOL]
 
  [NoSmartCommentsTests]
 

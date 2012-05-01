@@ -1,5 +1,11 @@
 {{$NEXT}}
 
+        Disable Perl::Critic RequireUseStrict and RequireUseWarnings
+        checks around the generated version-setting code, as this code
+        may be inserted before strict/warnings are enabled.
+
+        Drop Test::EOL.
+
 0.008     2012-05-01 13:40:42 Europe/London
 
         Add Dist::Zilla::Plugin::HTGTPkgVersion. This is identical to
