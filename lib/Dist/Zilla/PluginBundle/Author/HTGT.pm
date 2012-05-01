@@ -35,7 +35,7 @@ sub configure {
                 length $self->skip_deps ? ( 'skip' => [ $self->skip_deps ] ) : ()
             }
         ],
-        'PkgVersion',        
+        'HTGTPkgVersion',        
         'Test::Compile',
         'Test::EOL',
         'NoSmartCommentsTests',
@@ -108,7 +108,7 @@ This is the plugin bundle that HTGT uses. It is equivalent to:
 
  [AutoPrereqs]
 
- [PkgVersion]
+ [HTGTPkgVersion]
 
  [Test::Compile]
 
